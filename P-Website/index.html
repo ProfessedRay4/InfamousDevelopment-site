@@ -11,9 +11,16 @@
   <!-- remember, jQuery is completely optional -->
   <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
   <script type="text/javascript" src="js/jquery.particleground.js"></script>
+  <script type="text/javascript" src="js/cursor.js"></script>
   <script type="text/javascript" src="js/demo.js"></script>
-  <audio autoplay loop src="assets/music2.mp3"></audio>
+  <audio autoplay id="music">
+    <source src="assets/music2.mp3">
   </audio>
+  
+  <script>
+    var audio = document.getElementById("music");
+    audio.volume = 0.4;
+  </script>
   
   
 </head>
